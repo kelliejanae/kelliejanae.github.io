@@ -379,44 +379,41 @@ p {
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
   </a>
 </div>
-<script>
+<script>document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  effect: 'fade',
-  loop: true,
-  speed: 300,
-  autoplay: {
-  delay: 9000, // time in ms between slides
-  disableOnInteraction: false, // keep autoplay even after user interacts
-},
+    slidesPerView: 1,
+    spaceBetween: 20,
+    effect: 'fade',
+    loop: true,
+    speed: 300,
+    autoplay: {
+      delay: 9000,
+      disableOnInteraction: false,
+    },
+    mousewheel: {
+      invert: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 
-  mousewheel: {
-    invert: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }
-});
-
-//Read more on click - redirects each card to its designated data-readmore url 
   document.querySelectorAll('.swiper-slide').forEach(slide => {
     slide.style.cursor = 'pointer';
     slide.addEventListener('click', () => {
       const url = slide.getAttribute('data-readmore');
       if (url) {
-        window.open(url, '_blank'); // Open in new tab
-        // or use: window.location.href = url; // to open in same tab
+        window.open(url, '_blank');
       }
     });
   });
+});
 
 </script>  
 </body>
