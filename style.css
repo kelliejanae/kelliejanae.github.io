@@ -1,86 +1,54 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* General styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+  margin: 0;
+  font-family: "Caladea", sans-serif;
+  background: #001f1f;
+  color: #fff;
   scroll-behavior: smooth;
 }
 
-/* Navigation bar */
-nav {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #222;
-  padding: 1rem;
-  z-index: 1000;
+  background: rgba(0,0,0,0.7);
+  padding: 12px 20px;
+  z-index: 999;
 }
 
-nav ul {
-  list-style: none;
+.navbar ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  list-style: none;
+  gap: 20px;
 }
 
-nav a {
+.navbar a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #ffa500;
 }
 
-nav a:hover {
-  color: #ff6f61;
-}
-
-/* Sections */
-section {
+.section {
   min-height: 100vh;
-  padding: 5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 100px 20px 40px;
 }
 
-#hello { background: #f5f5f5; }
-#uiux { background: #e8f0fe; }
-#design { background: #fef3e6; }
-#github { background: #eafaf1; }
-#codepen { background: #f3e8ff; }
-
-h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: 1px solid #ffa500;
+  color: #ffa500;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
-
-p {
-  max-width: 700px;
-  text-align: center;
-}
-
-/* Scroll to top button */
-#topBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #222;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: none;
-}
-
-#topBtn:hover {
-  background: #ff6f61;
+.btn:hover {
+  background: #ffa500;
+  color: #001f1f;
 }
