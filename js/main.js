@@ -18,20 +18,14 @@ topBtn.addEventListener("click", () => {
 //Swiper JS
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  spaceBetween: 20,
   loop: true,
-  effect: 'slide',
-  speed: 500,
-  autoplay: {
-    delay: 7000,
-    disableOnInteraction: false
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
   }
 });
