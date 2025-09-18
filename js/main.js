@@ -18,14 +18,38 @@ topBtn.addEventListener("click", () => {
 //Swiper JS
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  loop: true,
   spaceBetween: 20,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+  effect: 'fade',
+  loop: true,
+  speed: 300,
+  autoplay: {
+  delay: 9000, // time in ms between slides
+  disableOnInteraction: false, // keep autoplay even after user interacts
+},
+
+  mousewheel: {
+    invert: false,
   },
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
+    clickable: true,
+    dynamicBullets: true
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   }
 });
+
+//Read more on click - redirects each card to its designated data-readmore url 
+  document.querySelectorAll('.swiper-slide').forEach(slide => {
+    slide.style.cursor = 'pointer';
+    slide.addEventListener('click', () => {
+      const url = slide.getAttribute('data-readmore');
+      if (url) {
+        window.open(url, '_blank'); // Open in new tab
+        // or use: window.location.href = url; // to open in same tab
+      }
+    });
+  });
