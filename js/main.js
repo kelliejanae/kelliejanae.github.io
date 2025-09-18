@@ -20,27 +20,18 @@ var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
-  speed: 300,
+  effect: 'slide',
+  speed: 500,
   autoplay: {
-    delay: 9000,
-    disableOnInteraction: false,
+    delay: 7000,
+    disableOnInteraction: false
   },
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true
+    clickable: true
   },
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-prev'
   }
-});
-
-// Read more click
-document.querySelectorAll('.swiper-slide').forEach(slide => {
-  slide.style.cursor = 'pointer';
-  slide.addEventListener('click', () => {
-    const url = slide.getAttribute('data-readmore');
-    if (url) window.open(url, '_blank');
-  });
 });
