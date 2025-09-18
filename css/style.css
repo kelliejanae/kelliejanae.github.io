@@ -1,32 +1,40 @@
-body {
+/* Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: "Caladea", sans-serif;
+  padding: 0;
+}
+
+/* General body */
+body {
+  font-family: "Caladea", serif;
   background: #001f1f;
   color: #fff;
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
+/* Navbar (fixed top) */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0,0,0,0.8);
-  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.85);
   z-index: 999;
+  padding: 12px 20px;
 }
 
 .navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
   list-style: none;
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .navbar a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -35,32 +43,73 @@ body {
   color: #ffa500;
 }
 
+/* Sections */
 .section {
   min-height: 100vh;
-  padding: 120px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 40px;
+  gap: 20px;
 }
 
-h1, h2 {
-  margin-bottom: 1rem;
-}
-
-p {
+/* Section text blocks */
+.cs-text {
   max-width: 700px;
   text-align: center;
 }
 
+.cs-text h1, .cs-text h2 {
+  margin-bottom: 1rem;
+}
+
+.cs-text p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Image card */
+.cs-image-card {
+  max-width: 420px;
+  width: 100%;
+}
+
+.cs-image-card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Buttons */
 .btn {
   display: inline-block;
-  margin-top: 10px;
   padding: 8px 14px;
   border: 1px solid #ffa500;
   color: #ffa500;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background 0.3s;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
 .btn:hover {
   background: #ffa500;
   color: #001f1f;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 520px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cs-text h1, .cs-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .cs-text p {
+    font-size: 14px;
+  }
 }
