@@ -97,205 +97,218 @@ p {
 
 
 /***Slider Styles***/
-/* Section container */
-.section {
-  min-height: 100vh;
+.line-title {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.project-name {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 36px;
+}
+button {
+  outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.game-section {
+  padding: 60px 50px;
+}
+.game-section .owl-stage {
+  margin: 15px 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center;     /* horizontal centering */
-  padding: 100px 20px;
-  gap: 20px;
+  display: -webkit-flex;
 }
-
-/* Swiper container */
-
-.slider-header {
-  margin: 0;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #26384E;
-  transform: translateY(20px);
-  transition: all 0.4s ease;
-  transition-delay: 0.2s;
+.game-section .item {
+  margin: 0 15px 60px;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
   overflow: hidden;
-  max-width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.game-section .item.active {
+  width: 400px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.game-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.game-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.game-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.game-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .line-title {
+    margin-bottom: 32px;
+  }
+  .project-name {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .game-section .item.active {
+    width: 900px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
 }
 
-@media screen and (max-width: 520px) {
-  .slider-header {
-    font-size: 16px;
+@media (min-width: 768px) and (max-width: 991px) {
+  .line-title {
+    margin-bottom: 32px;
+  }
+  .project-name {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px 40px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .game-section .item.active {
+    width: 360px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .line-title {
+    margin-bottom: 20px;
+  }
+  .project-name {
+    margin: 0 0 8px;
+    font-size: 19px;
     line-height: 24px;
   }
-}
-
-.slider-paragraph {
-  font-size: 16px;
-  line-height: 24px;
-  color: #889DB8;
-  transform: translateY(20px);
-  transition: all 0.4s ease;
-  transition-delay: 0.3s;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@media screen and (max-width: 520px) {
-  .slider-paragraph {
-    font-size: 14px;
-    line-height: 20px;
+  .line-title {
+    width: 250px;
   }
-}
 
-.swiper-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.swiper-container {
-  background: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  width: 100%;
-  position: relative;
-  max-width: 420px;
-  height: 100%;
-  max-height: 500px;
-  border-radius: 10px;
-}
-
-.slider-image-wrapper {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slider-item {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  opacity: 0;
-  background: linear-gradient(270deg, rgba(247, 249, 255, 1) 0%, rgba(242, 246, 255, 1) 100%);
-  cursor: grab;
-}
-
-.slider-item-content {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 0.4s;
-}
-
-.slider-item-content > * {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.swiper-slide-active .slider-item-content > * {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.slider-image {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  object-fit: cover;
-  transition: 0.2s;
-}
-
-.swiper-pagination {
-  position: absolute;
-  left: 50%;
-  bottom: 8px;
-  transform: translateX(-50%);
-  z-index: 1;
-  width: auto !important;
-}
-
-.swiper-pagination-bullet {
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  line-height: 30px;
-  font-size: 12px;
-  opacity: 1;
-  background: rgba(255, 185, 0, 0.3);
-  display: inline-block;
-  margin-right: 8px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.swiper-pagination-bullet-active {
-  background: #FFB200;
-  width: 20px;
-  border-radius: 10px;
-}
-
-.slider-buttons {
-  position: absolute;
-  display: flex;
-  top: 100%;
-  justify-content: flex-end;
-  width: 100%;
-  padding-top: 8px;
-}
-
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-button-read {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color: #333;
-  position: relative;
-  margin-left: 4px;
-}
-
-.swiper-button-next:before,
-.swiper-button-prev:before,
-.swiper-button-read:before {
-  content: '';
-  position: absolute;
-  background-color: #333;
-  height: 1px;
-  width: 0;
-  left: 0;
-  bottom: -1px;
-  transition: 0.2s;
-}
-
-.swiper-button-next:hover:before,
-.swiper-button-prev:hover:before,
-.swiper-button-read:hover:before {
-  width: 100%;
-}
-
-.swiper-button-read {
-  padding-top: 10px;
-  color: #ffa500;
-}
-
-@media screen and (max-width: 520px) {
-  .swiper-button-next:hover:before,
-  .swiper-button-prev:hover:before {
-    display: none;
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 30px 15px 20px;
+  }
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
   }
 }
