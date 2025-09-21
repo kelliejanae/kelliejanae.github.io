@@ -15,41 +15,30 @@ topBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-//Swiper JS
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  effect: 'fade',
-  loop: true,
-  speed: 300,
-  autoplay: {
-  delay: 9000, // time in ms between slides
-  disableOnInteraction: false, // keep autoplay even after user interacts
-},
-
-  mousewheel: {
-    invert: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }
+$(".custom-carousel").owlCarousel({
+  autoWidth: true,
+  loop: true
 });
 
-//Read more on click - redirects each card to its designated data-readmore url 
-  document.querySelectorAll('.swiper-slide').forEach(slide => {
-    slide.style.cursor = 'pointer';
-    slide.addEventListener('click', () => {
-      const url = slide.getAttribute('data-readmore');
-      if (url) {
-        window.open(url, '_blank'); // Open in new tab
-        // or use: window.location.href = url; // to open in same tab
-      }
-    });
+$(document).ready(function () {
+  // Step A: Set all items to their default background on load
+  $(".custom-carousel .item").each(function () {
+    $(this).css("background-image", "url('" + $(this).data("default") + "')");
   });
+
+  // Step B: When clicking an item...
+  $(".custom-carousel .item").click(function () {
+    // Reset all to default backgrounds
+    $(".custom-carousel .item").each(function () {
+      $(this)
+        .removeClass("active")
+        .css("background-image", "url('" + $(this).data("default") + "')");
+    });
+
+    // Set this one to its active background
+    $(this)
+      .addClass("active")
+      .css("background-image", "url('" + $(this).data("active") + "')");
+  });
+});
+
