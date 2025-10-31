@@ -7,9 +7,11 @@
 }
 
 #portrait {
+  display: block;
   width: 400px;
+  height: 400px;
   margin: auto;
-  margin: 100px 100px 100px 200px;
+  margin-top: 100px;
 }
 
 #uiux {
@@ -19,14 +21,14 @@
 
 #design {
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 #hello {
   padding-top: 75px;
   background-color: #fff;
   height: 100vh;
-  display: flex;
+  display: block;
   align-items: center; /* keeps them aligned vertically */
   gap: 20px; /* space between the two blocks */
   width: 100%;
@@ -34,13 +36,19 @@
 }
 
 #hello .text {
-  margin-right: 15%;
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
 }
 
 #portrait {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.slider-wrapper, .slider {
+  font-size: 1.5em;
 }
 
 .text {
@@ -331,6 +339,65 @@ section .container .card-inner .box .icon .iconBox span {
      margin-top: 400px;
   }
 }
+
+/***** Begin Text Slider *****/
+.slider-wrapper {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-top: 33px;
+}
+.slider{
+  height: 50px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.slider div {
+  color:#000;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 2px 15px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.slider-text1 {
+  background: #ff80ff;
+  animation: slide 5s linear infinite;
+  
+}
+.slider-text2 {
+  background: #70b3b1;
+}
+.slider-text3 {
+  background: #f3f364;
+}
+
+.slider-text4 {
+  background: lavender;
+}
+
+.slider-text5 {
+  background: #ffc09f;
+}
+
+@keyframes slide {
+
+  0% {margin-top:-500px;}
+  10% {margin-top:-400px;}
+  20% {margin-top:-400px;}
+  30% {margin-top:-300px;}
+  40% {margin-top:-300px;}
+  50% {margin-top:-200px;}
+  60% {margin-top:-200px;}
+  70% {margin-top:-100px;}
+  80% {margin-top:-100px;}
+  90% {margin-top:0px;}
+  100% {margin-top:0px;}
+}
+/****** End text Slider ****/
 
 @media only screen and (max-width: 481px) {
   
