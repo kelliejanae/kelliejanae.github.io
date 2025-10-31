@@ -123,8 +123,9 @@ section .container {
   gap: 1rem;
   flex-wrap: wrap;
   padding: 2rem;
-  background: #222;
+  background-color: #222;
 }
+
 #footer svg {
   width: 40px;
 }
