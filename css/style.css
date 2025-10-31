@@ -407,7 +407,7 @@ section .container .card-inner .box .icon .iconBox span {
 
 @media only screen and (max-width: 605px) {
   #design, #footer {
-    margin-top: 700px;
+    margin-top: 750px;
   }
 }
 
@@ -420,6 +420,6 @@ section .container .card-inner .box .icon .iconBox span {
     margin-left: 0;
   }
   #design, #footer {
-    margin-top: 500px;
+    margin-top: 800px;
   }
 }
