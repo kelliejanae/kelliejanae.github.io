@@ -103,9 +103,6 @@ section .container {
   background-color: #222;
   color: #fff;
   align-items: center;
-  width: 100%;
-  display: block;
-  
 }
 
 #footer svg {
