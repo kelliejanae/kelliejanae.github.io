@@ -99,12 +99,13 @@ section .container {
 }
 
 #footer {
-  height: 10%;
+  height: 150px;
   background-color: #222;
   color: #fff;
   align-items: center;
   width: 100%;
   display: block;
+  
 }
 
 #footer svg {
