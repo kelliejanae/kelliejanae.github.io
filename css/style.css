@@ -104,12 +104,6 @@ section .container {
   align-items: center;
 }
 
-#footer-content {
-  display: flex;
-  align-content: center;
-  margin: auto;
-}
-
 #footer svg {
   width: 50px;
   padding-left: 50px;
