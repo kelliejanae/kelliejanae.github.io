@@ -103,9 +103,11 @@ section .container {
   color: #fff;
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 0;
 }
 
-#footer-content {
+//#footer-content {
   display: flex;
   align-content: center;
   width: 80%;
