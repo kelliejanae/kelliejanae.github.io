@@ -104,12 +104,12 @@ section .container {
   align-items: center;
 }
 
-/*#footer-content {*/
+#footer-content {
   display: flex;
   align-content: center;
   width: 80%;
   margin: auto;
-/*}*/
+}
 
 #footer svg {
   width: 50px;
