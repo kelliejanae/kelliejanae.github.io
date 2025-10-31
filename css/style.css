@@ -103,7 +103,6 @@ section .container {
   color: #fff;
   display: flex;
   align-items: center;
-  position: fixed;
 }
 
 //#footer-content {
