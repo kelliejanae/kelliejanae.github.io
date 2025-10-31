@@ -96,7 +96,7 @@ section .container {
   gap: 2rem;
 }
 
-#footer {
+/*#footer {*/
   height: 200px;
   background-color: #222;
   margin-top: 100px;
@@ -104,16 +104,28 @@ section .container {
   align-items: center;
 }
 
-//#footer-content {
+/*#footer-content {*/
   display: flex;
   align-content: center;
   width: 80%;
   margin: auto;
 }
 
-#footer svg {
+/*#footer svg {*/
   width: 50px;
   padding-left: 50px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+#footer svg {
+  width: 40px;
 }
 
 #footer a {
