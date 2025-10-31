@@ -96,7 +96,7 @@ section .container {
   gap: 2rem;
 }
 
-#footer {
+//#footer {
   height: 200px;
   background-color: #222;
   margin-top: 100px;
@@ -111,16 +111,16 @@ section .container {
   margin: auto;
 }
 
-#footer svg {
+//#footer svg {
   width: 50px;
   padding-left: 50px;
 }
 
-#footer a {
+//#footer a {
   color: #fff;
 }
 
-#footer a:hover{
+//#footer a:hover{
     color: #fb65ff;
 }
 
