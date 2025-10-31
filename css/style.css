@@ -164,9 +164,6 @@ nav a:hover {
   color: #000 !important;
 }
 
-section .container .card-inner .box {
-  background; transparent;
-}
 
 /* Card styles */
 section .container .card:nth-child(1) .box .icon .iconBox {
@@ -243,7 +240,7 @@ section .container .card-inner {
 section .container .card-inner .box {
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: transparent;
   border-radius: 1.25rem;
   overflow: hidden;
 }
@@ -406,6 +403,9 @@ section .container .card-inner .box .icon .iconBox span {
 @media only screen and (max-width: 605px) {
   #design, #footer {
     margin-top: 750px;
+  }
+  section .container .card-inner .box .imgBox img {
+    width:80%;
   }
 }
 
