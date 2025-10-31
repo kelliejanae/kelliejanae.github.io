@@ -102,6 +102,8 @@ section .container {
   margin-top: 100px;
   color: #fff;
   align-items: center;
+  position: absolute;
+  bottom: 0;
 }
 
 #footer svg {
