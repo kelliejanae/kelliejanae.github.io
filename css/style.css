@@ -374,9 +374,9 @@ section .container .card-inner .box .icon .iconBox span {
 }
 /****** End text Slider ****/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1250px) {
   #design, #footer {
-    margin-top: 200px;
+    margin-top: 350px;
   }
 }
 
@@ -401,7 +401,7 @@ section .container .card-inner .box .icon .iconBox span {
   }
   
   #design, #footer {
-    margin-top:300px;
+    margin-top:350px;
   }
 
 
