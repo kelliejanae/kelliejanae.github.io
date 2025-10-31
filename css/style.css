@@ -105,7 +105,7 @@ section .container {
   color: #fff;
   align-items: center;
   width: 100%;
-  display: flex;
+  display: block;
 }
 
 #footer svg {
