@@ -101,7 +101,6 @@ section .container {
   background-color: #222;
   margin-top: 100px;
   color: #fff;
-  display: flex;
   align-items: center;
   position: absolute;
   bottom: 0;
