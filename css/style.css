@@ -107,7 +107,6 @@ section .container {
 #footer-content {
   display: flex;
   align-content: center;
-  width: 80%;
   margin: auto;
 }
 
