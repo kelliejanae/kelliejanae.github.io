@@ -384,7 +384,7 @@ section .container .card-inner .box .icon .iconBox span {
 
 @media only screen and (max-width: 1250px) {
   #design, #footer {
-    margin-top: 350px;
+    margin-top: 100px;
   }
 }
 
@@ -409,14 +409,14 @@ section .container .card-inner .box .icon .iconBox span {
   }
   
   #design, #footer {
-    margin-top:350px;
+    margin-top:100px;
   }
 
 }
 
 @media only screen and (max-width: 605px) {
   #design, #footer {
-    margin-top: 750px;
+    margin-top: 100px;
   }
   section .container .card-inner .box .imgBox img {
     width:80%;
@@ -432,6 +432,6 @@ section .container .card-inner .box .icon .iconBox span {
     margin-left: 0;
   }
   #design, #footer {
-    margin-top: 800px;
+    margin-top: 100px;
   }
 }
