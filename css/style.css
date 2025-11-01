@@ -110,6 +110,7 @@ section .container {
 #footer a {
   color: #fff;
   padding: 50px 0;
+  align-items: center;
 }
 
 #footer a:hover{
