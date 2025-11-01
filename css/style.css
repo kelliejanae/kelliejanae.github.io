@@ -358,7 +358,7 @@ section .container .card-inner .box .icon .iconBox span {
 }
 
 .project-wrapper h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   display:block;
   margin: auto;
   color: black;
@@ -366,7 +366,7 @@ section .container .card-inner .box .icon .iconBox span {
 }
 
 .project-text {
-  font-size: 1.5em;
+  font-size: 1.25em;
   display: block;
   width: 70%;
   margin: auto;
