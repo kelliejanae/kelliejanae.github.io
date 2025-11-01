@@ -393,6 +393,7 @@ section .container .card-inner .box .icon .iconBox span {
   width: 250px;
   margin: auto;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 @keyframes slide {
