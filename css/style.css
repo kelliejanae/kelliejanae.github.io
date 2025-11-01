@@ -302,6 +302,8 @@ section .container .card-inner .box .icon .iconBox span {
 }
 
 
+
+
 /***** Begin Text Slider *****/
 .slider-wrapper {
   text-transform: uppercase;
@@ -397,7 +399,9 @@ section .container .card-inner .box .icon .iconBox span {
   #design, #footer {
     margin-top: 30px;
   }
-  
+  section .card {
+  width: 80%
+}
 }
 
 
