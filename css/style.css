@@ -392,6 +392,7 @@ section .container .card-inner .box .icon .iconBox span {
   border-radius: 15px;
   width: 100px;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 @keyframes slide {
