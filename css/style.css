@@ -41,6 +41,7 @@
   border-radius: 50%;
 }
 
+
 .slider-wrapper, .slider {
   font-size: 1.5em;
 }
@@ -358,7 +359,7 @@ section .container .card-inner .box .icon .iconBox span {
 
 @media only screen and (max-width: 1250px) {
   #design, #footer {
-    margin-top: 10px;
+    margin-top: 10%;
   }
 }
 
@@ -383,14 +384,14 @@ section .container .card-inner .box .icon .iconBox span {
   }
   
   #design, #footer {
-    margin-top:10px;
+    margin-top:10%;
   }
 
 }
 
 @media only screen and (max-width: 605px) {
   #design, #footer {
-    margin-top: 10px;
+    margin-top: 10%;
   }
   
 }
@@ -404,7 +405,7 @@ section .container .card-inner .box .icon .iconBox span {
     margin-left: 0;
   }
   #design, #footer {
-    margin-top: 10px;
+    margin-top: 10%;
   }
  
 }
