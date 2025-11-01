@@ -15,7 +15,7 @@
 }
 
 #design {
-  margin: 10%;
+  margin-top: 30px;
 }
 
 #uiux {
@@ -363,7 +363,7 @@ section .container .card-inner .box .icon .iconBox span {
 
 @media only screen and (max-width: 1250px) {
   #design, #footer {
-    margin-top: 10%;
+    margin-top: 30px;
   }
 }
 
@@ -388,14 +388,14 @@ section .container .card-inner .box .icon .iconBox span {
   }
   
   #design, #footer {
-    margin-top:10%;
+    margin-top: 30px;
   }
 
 }
 
 @media only screen and (max-width: 605px) {
   #design, #footer {
-    margin-top: 10%;
+    margin-top: 30px;
   }
   
 }
@@ -409,7 +409,7 @@ section .container .card-inner .box .icon .iconBox span {
     margin-left: 0;
   }
   #design, #footer {
-    margin-top: 10%;
+    margin-top: 30px;
   }
  
 }
