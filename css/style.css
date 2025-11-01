@@ -386,9 +386,12 @@ section .container .card-inner .box .icon .iconBox span {
 
 .project-button {
   padding: 10px; 
+  display: block;
   color: #fff;
   background-color: #000;
   border-radius: 15px;
+  width: 100px;
+  margin: auto;
 }
 
 @keyframes slide {
