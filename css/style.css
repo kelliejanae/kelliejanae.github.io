@@ -347,14 +347,21 @@ section .container .card-inner .box .icon .iconBox span {
   background: #ffc09f;
 }
 
+/*end text slider*/
+
+
 .project-wrapper {
   display: block;
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
 .project-text {
   font-size: 1em;
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
 }
 
 
