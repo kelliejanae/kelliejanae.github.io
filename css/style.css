@@ -357,11 +357,13 @@ section .container .card-inner .box .icon .iconBox span {
 }
 
 .project-text {
-  font-size: 1em;
+  font-size: 1.5em;
   display: block;
   width: 80%;
   margin: auto;
+  margin-top: 50px;
   padding: 10px;
+  text-align: center;
 }
 
 
