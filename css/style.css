@@ -414,4 +414,7 @@ section .container .card-inner .box .icon .iconBox span {
   #design, #footer {
     margin-top: 10px;
   }
+  #design {
+    height:400vh;
+  }
 }
