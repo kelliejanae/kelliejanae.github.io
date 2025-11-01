@@ -366,7 +366,12 @@ section .container .card-inner .box .icon .iconBox span {
   text-align: center;
 }
 
-
+.project-img {
+  display: block;
+  width: 600px;
+  margin: auto;
+  border-radius: 15px;
+}
 
 @keyframes slide {
 
