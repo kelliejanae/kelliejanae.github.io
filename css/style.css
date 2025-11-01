@@ -347,6 +347,18 @@ section .container .card-inner .box .icon .iconBox span {
   background: #ffc09f;
 }
 
+.project-wrapper {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.project-text {
+  font-size: 1em;
+}
+
+
+
 @keyframes slide {
 
   0% {margin-top:-500px;}
